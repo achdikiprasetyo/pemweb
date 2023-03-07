@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.atas{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.core{
+    color: aliceblue;
+    font-size: 37px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #6805E6;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: #6805E6;
+    transition: .3s;
+}
+.isi-utama{
+    top: 50%;
+    left: 8%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+h1{
+    color: aliceblue;
+    font-size: 46px;
+    margin: 20px 0px 20px;
+    font-style: italic;
+}
+h4{
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 26px;
+}
+h2{
+    color: aliceblue;
+    font-size: 20px;
+}
+.cv {
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background-color: #6805E6;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: transform .7;
+
+}
+.cv:hover{
+    transform: scale(1.3);
+}
+.bio{
+    padding: 100px 0px;
+    width: 1005;
+    background-color: black;
+}
+.bio img{
+    height: auto;
+    width: 400px;
+
+}
+.isi-bio{
+    width: 550px;
+
+}
+.main{
+    width: 1100px;
+    max-width: 94%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+.isi-bio h2{
+    color: #6805E6;
+    font-size: 74px;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
+.whatsapp {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .5;
+}
+.whatsapp:hover{
+    background-color: transparent;
+    border: 2px solid green;
+}
+table{
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    color: aliceblue;
+    letter-spacing: 1.5;
+    margin-bottom: 30px;
+}
+
+h5{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
