@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATA DIRI</title>
 
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="cv.css">
 </head>
+<?php
+$nama = 'ACH DIKI PRASETYO';
+$kelebihan = array('Percaya diri','Time management yang baik','Bisa bekerja dengan Tim');
+$Kemampuan = array('Berkomunikasi dengan baik','Paham jaringan internet','Bertanggung jawab','Menguasai beberapa bahasa pemerograman (C,C++)');
+$pendidikan = array('SD Negeri Sepande','SMP Negeri 4 Sidoarjo','SMK Negeri 3 Buduran','UPN "Veteran" Jawa Timur');
+$pelatihan = array('Enterpreneur (2020)','Seminar UMKM Go Digital','Webinar Fasilkom Talk (2021)');
+$pengalaman = array('Magang di perusahaan penyedia internet “Latansa Teknologi”','Instalasi jaringan di “SMK Negeri 3 Buduran”','Mengikti Organisasi Pramuka'); 
+$kontak = array('+(62)82247424826','dikiprasetyo1234@gmail.com');
+ ?>
 <body>
     <div class="container">
         <div class="kertas_satu">
             <div class="nama">
-                <h3>ACH. DIKI PRASETYO</h3>
+                <h3><?php echo "$nama"?></h3>
             </div>
             <div class="profile">
             </div>
@@ -23,27 +32,27 @@
             </div>
             <div class="tabel-kanan">
                 <ul>
-                    <li>Percaya diri</li>
-                    <li>Time Management yang baik</li>
-                    <li>Bisa bekerja dengan tim</li>
+                    <li><?php echo "$kelebihan[0]"?></li>
+                    <li><?php echo "$kelebihan[1]"?></li>
+                    <li><?php echo "$kelebihan[2]"?></li>
                 </ul>
             </div>
             <h2>KEMAMPUAN</h2>
             <div class="garis"></div>
             <div class="tabel-kanan">
                 <ul>
-                    <li>Berkomunikasi dengan baik</li>
-                    <li>Paham jaringan internet</li>
-                    <li>Bertanggung Jawab</li>
-                    <li>Menguasai beberapa bahasa pemerograman (C,C++)</li>
+                    <li><?php echo "$Kemampuan[0]"?></li>
+                    <li><?php echo "$Kemampuan[1]"?></li>
+                    <li><?php echo "$Kemampuan[2]"?></li>
+                    <li><?php echo "$Kemampuan[3]"?></li>
                 </ul>
             </div>
             <h2>KONTAK</h2>
             <div class="garis"></div>
             <div class="tabel-kanan">
                 <ul>
-                    <li>+(62)82247424826</li>
-                    <li>dikiprasetyo1234@gmail.com</li>
+                    <li><?php echo "$kontak[0]"?></li>
+                    <li><?php echo "$kontak[1]"?></li>
                 </ul>
             </div>
         </div>
@@ -63,10 +72,10 @@
                 </div>
                 <div class="isi-tabel">
                     <ul>
-                        <li>SD Negeri Sepande</li>
-                        <li>SMP Negeri 4 Sidoarjo</li>
-                        <li>SMK Negeri 3 Buduran</li>
-                        <li>UPN "Veteran" Jawa Timur</li>
+                        <li><?php echo "$pendidikan[0]"?></li>
+                        <li><?php echo "$pendidikan[1]"?></li>
+                        <li><?php echo "$pendidikan[2]"?></li>
+                        <li><?php echo "$pendidikan[3]"?></li>
                     </ul>
                 </div>
                 <div class="box">
@@ -76,10 +85,9 @@
                 </div>
                 <div class="isi-tabel">
                     <ul>
-                        <li>Magang di perusahaan penyedia  internet
-                            “Latansa Teknologi”</li>
-                        <li>Instalasi jaringan di “SMK Negeri 3 Buduran”</li>
-                        <li>Mengikuti Origanisasi Pramuka</li>
+                        <li><?php echo "$pengalaman[0]"?></li>
+                        <li><?php echo "$pengalaman[1]"?></li>
+                        <li><?php echo "$pengalaman[2]"?></li>
                         
                     </ul>
                 </div>
@@ -90,8 +98,10 @@
                 </div>
                 <div class="isi-tabel">
                     <ul>
-                        <li>Entrepreneur (2020)</li>
-                        <li>Seminar UMKM Go Digital (2021)</li>
+                        <li><?php echo "$pelatihan[0]"?></li>
+                        <li><?php echo "$pelatihan[1]"?></li>
+                        <li><?php echo "$pelatihan[2]"?></li>
+                        
                 
                         
                     </ul>
@@ -99,5 +109,8 @@
             </div>
         </div>
     </div>
+<footer>
+    <h1>@Ach Diki Prasetyo</h1>
+</footer>
 </body>
 </html>
