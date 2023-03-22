@@ -1,0 +1,112 @@
+*{
+    font-family: "Montserrat", verdana;
+     margin : 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.33fr 1fr;
+    width: 210mm;
+    height: 230mm;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(15, 2, 2) ;
+}
+
+.container .kertas_satu {
+    padding: 40px 20px;
+    padding-left: 35px;
+    background-color: #FDF6F6;
+    width: 100%;
+    color: black;
+}
+
+.container .kertas_satu .profile {
+    display: inline-block;
+    margin-left: 6px;
+    margin-bottom: 15px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 5px solid #6F2727 ;
+    background-image: url(foto_profile.png);
+    background-position: center top;
+    background-clip: 100%;
+}
+
+.kertas_dua{
+    background-color: rgba(181, 48, 48, 0.14);;
+}
+
+.container .kertas_dua .box {
+    display: inline-block;
+    padding: 10px 70px 2px 20px ;
+    margin-left: 2px;
+    margin-top:35px;
+    background-color: #6F2727;
+    color: white;
+}
+
+.container .kertas_dua .grup-1 .isi {
+    margin-top: 14px;
+    margin-right: 30px;
+    margin-left: 13px;
+    line-height: 1.5;
+    text-align: justify;
+    right: 30px;
+}
+
+.container .kertas_dua .sub-isi {
+    margin-bottom: 10px;
+
+}
+
+.isi-tabel{
+    font-family: inherit;
+    margin-left:30px ;
+    margin-top: 7px;
+    font-weight: bold;
+    color: #6F2727;
+    line-height: 1.5;
+}
+
+.container .kertas_satu .garis {
+    display: inline-block;
+    
+    padding: 1px 200px 2px 20px ;
+    margin-left: 2px;
+    margin-top:10px;
+    background-color: #6F2727;
+}
+
+.tabel-kanan{
+    color: #4B1212;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.nama{
+    color: #4B1212;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+footer{
+    background: #6F2727;
+    width: 100%;
+    height: 30px;
+}
+h1{
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
