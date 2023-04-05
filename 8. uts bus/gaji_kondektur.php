@@ -118,13 +118,13 @@
 
             if(isset($_GET['bulan'])){
                 $bulan = $_GET['bulan'];
-                $query = "SELECT kondektur.nama,  MONTHNAME(trans_upn.tanggal) as bulan, trans_upn.jumlah_km, SUM(trans_upn.jumlah_km * 3000) as total_gaji_bulanan 
+                $query = "SELECT kondektur.nama,  MONTHNAME(trans_upn.tanggal) as bulan, trans_upn.jumlah_km, SUM(trans_upn.jumlah_km * 1500) as total_gaji_bulanan 
                             FROM trans_upn 
                             INNER JOIN kondektur ON trans_upn.id_kondektur = kondektur.id_kondektur 
                             WHERE MONTH(trans_upn.tanggal) = $bulan
                             GROUP BY kondektur.nama,MONTH(trans_upn.tanggal)";
             } else {
-                $query = "SELECT kondektur.nama,  MONTHNAME(trans_upn.tanggal) as bulan, trans_upn.jumlah_km, SUM(trans_upn.jumlah_km * 3000) as total_gaji_bulanan 
+                $query = "SELECT kondektur.nama,  MONTHNAME(trans_upn.tanggal) as bulan, trans_upn.jumlah_km, SUM(trans_upn.jumlah_km * 1500) as total_gaji_bulanan 
                             FROM trans_upn 
                             INNER JOIN kondektur ON trans_upn.id_kondektur = kondektur.id_kondektur 
                             GROUP BY kondektur.nama,MONTH(trans_upn.tanggal)";
